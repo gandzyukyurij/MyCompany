@@ -1,0 +1,15 @@
+﻿@model TextField
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeywords;
+}
+
+<div>
+    @Html.Raw(Model.Text)
+</div>
+<ul>
+    <li>Name <a asp-area="" asp-controller="Name">@Config.CompanyName</a></li>
+    <li>Phone <a asp-area="" asp-controller="Phone">@Config.CompanyPhone</a></li>
+    <li>Email <a asp-area="" asp-controller="Email">@Config.CompanyEmail</a></li>
+</ul>
