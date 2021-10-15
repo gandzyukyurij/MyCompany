@@ -618,7 +618,11 @@ var breakpoints=function(){"use strict";function e(e){t.init(e)}var t={list:null
 		// Title Bar.
 			$(
 				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
+				'<a href="#navPanel" class="toggle" > <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="30px" viewBox="0 0 20 30" zoomAndPan="disable">'+
+				'< rect x = "0" y = "0" width = "20" height = "2" style = "fill:#fff;" />'+
+				'<rect x="0" y="5" width="20" height="2" style="fill:#fff;" />'+
+				'<rect x="0" y="10" width="20" height="2" style="fill:#fff;" />'+
+				'</svg ></a>' +
 					'<span class="title">' + $('#logo').html() + '</span>' +
 				'</div>'
 			)
